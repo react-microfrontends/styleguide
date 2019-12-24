@@ -1,0 +1,49 @@
+body {
+  margin: 0px;
+  --primary: #011627;
+  --background: #182b3a;
+  --white: #fdfffc;
+  --black: #171817;
+  --gray: #8b8c8a;
+  --blue: #2ec4b6;
+  --red: #e71d36;
+  --orange: #ff9f1c;
+  --white-overlay: rgba(253, 255, 252, 0.8);
+  background-color: var(--background);
+  font-family: "Roboto", sans-serif;
+  color: var(--white);
+  --navbar-height: 60px;
+}
+
+.navBarHeight {
+  height: var(--navbar-height);
+}
+
+.brand-button {
+  background-color: var(--orange);
+  color: var(--white);
+  border-style: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 8px;
+  text-size: 100%;
+}
+
+.brand-button:disabled {
+  background-color: var(--primary);
+  cursor: not-allowed;
+  color: var(--gray);
+}
+
+.brand-link {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.brand-link:visited {
+  color: var(--orange);
+}
+
+.margin-bottom-16 {
+  margin-bottom: 16px;
+}
