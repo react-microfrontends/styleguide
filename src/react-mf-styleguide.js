@@ -1,2 +1,4 @@
 import "./set-public-path";
 import "./global.css?modules=false";
+
+// You can also export React components from this file and import them into your microfrontends
