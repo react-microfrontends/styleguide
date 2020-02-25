@@ -1,5 +1,8 @@
 # styleguide
+
 An in-browser ES module for common css and javascript components
+
+[![CircleCI](https://circleci.com/gh/react-microfrontends/styleguide.svg?style=svg)](https://circleci.com/gh/react-microfrontends/styleguide)
 
 ## What is this?
 
