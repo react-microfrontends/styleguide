@@ -1,11 +1,4 @@
-@tailwind base;
-
-@tailwind components;
-
-@tailwind utilities;
-
-body {
-  margin: 0px;
+:root {
   --primary: #011627;
   --background: #182b3a;
   --white: #fdfffc;
@@ -15,6 +8,32 @@ body {
   --red: #e71d36;
   --orange: #ff9f1c;
   --white-overlay: rgba(253, 255, 252, 0.8);
+  /* imperial colors */
+  --imperial-red: #bc1e22;
+  --imperial-white: #ffffff;
+  --imperial-black: #000000;
+  --imperial-green: #556567;
+  --imperial-blue: #394a59;
+  --imperial-primary: #64696c;
+  --imperial-yellow: #f6a32d;
+  /* Rebel colors */
+  --rebel-red: #d40000;
+  --rebel-white: #ffffff;
+  --rebel-black: #000000;
+  --rebel-green: #17af0a;
+  --rebel-blue: #2719c7;
+  --rebel-primary: #f26419;
+  --rebel-yellow: #f6a32d;
+}
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  margin: 0px;
   background-color: var(--background);
   font-family: "Roboto", sans-serif;
   color: var(--white);
