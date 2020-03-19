@@ -19,6 +19,17 @@ body {
   height: var(--navbar-height);
 }
 
+nav.topnav {
+  position: fixed;
+  width: 100vw;
+  top: 0px;
+  z-index: 100;
+}
+
+.m-t-navBarHeight {
+  margin-top: var(--navbar-height);
+}
+
 .brand-button {
   background-color: var(--orange);
   color: var(--white);
