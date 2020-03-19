@@ -23,6 +23,7 @@ nav {
   position: fixed;
   width: 100vw;
   top: 0px;
+  z-index: 100;
 }
 
 .m-t-navBarHeight {
