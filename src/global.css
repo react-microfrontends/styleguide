@@ -19,7 +19,7 @@ body {
   height: var(--navbar-height);
 }
 
-nav {
+nav.topnav {
   position: fixed;
   width: 100vw;
   top: 0px;
