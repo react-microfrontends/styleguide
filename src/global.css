@@ -26,7 +26,7 @@ nav {
 }
 
 .m-t-navBarHeight {
-  margin-top: var(--navBarHeight);
+  margin-top: var(--navbar-height);
 }
 
 .brand-button {
