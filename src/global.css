@@ -1,12 +1,4 @@
 :root {
-  --primary: #011627;
-  --background: #182b3a;
-  --white: #fdfffc;
-  --black: #171817;
-  --gray: #8b8c8a;
-  --blue: #2ec4b6;
-  --red: #e71d36;
-  --orange: #ff9f1c;
   --white-overlay: rgba(253, 255, 252, 0.8);
   /* imperial colors */
   --imperial-red: #bc1e22;
@@ -24,6 +16,15 @@
   --rebel-blue: #2719c7;
   --rebel-primary: #f26419;
   --rebel-yellow: #f6a32d;
+  /* defaults */
+  --color-primary: var(--imperial-primary);
+  --color-secondary: var(--imperial-red);
+  --color-contrast: var(--imperial-white);
+  --color-success: var(--imperial-green);
+  --color-danger: var(--rebel-primary);
+  --color-warning: var(--imperial-yellow);
+  --color-info: var(--imperial-blue);
+  --background: var(--imperial-black);
 }
 
 @tailwind base;

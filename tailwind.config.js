@@ -6,7 +6,8 @@ module.exports = {
       success: "var(--color-success)",
       danger: "var(--color-danger)",
       warning: "var(--color-warning)",
-      info: "var(--color-info)"
+      info: "var(--color-info)",
+      contrast: "var(--color-contrast)"
     }
   },
   variants: {},
