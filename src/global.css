@@ -1,30 +1,13 @@
 :root {
-  --white-overlay: rgba(253, 255, 252, 0.8);
-  /* imperial colors */
-  --imperial-red: #bc1e22;
-  --imperial-white: #ffffff;
-  --imperial-black: #000000;
-  --imperial-green: #556567;
-  --imperial-blue: #394a59;
-  --imperial-primary: #64696c;
-  --imperial-yellow: #f6a32d;
-  /* Rebel colors */
-  --rebel-red: #d40000;
-  --rebel-white: #ffffff;
-  --rebel-black: #000000;
-  --rebel-green: #17af0a;
-  --rebel-blue: #2719c7;
-  --rebel-primary: #f26419;
-  --rebel-yellow: #f6a32d;
-  /* defaults */
-  --color-primary: var(--imperial-primary);
-  --color-secondary: var(--imperial-red);
-  --color-contrast: var(--imperial-white);
-  --color-success: var(--imperial-green);
-  --color-danger: var(--rebel-primary);
-  --color-warning: var(--imperial-yellow);
-  --color-info: var(--imperial-blue);
-  --background: var(--imperial-black);
+  --color-primary: #011627;
+  --color-secondary: #8b8c8a;
+  --color-danger: #e71d36;
+  --color-warning: #ff9f1c;
+  --color-info: #2ec4b6;
+  --color-background: #182b3a;
+  --color-white: #fdfffc;
+  --color-black: #171817;
+  --color-overlay: rgba(253, 255, 252, 0.8);
 }
 
 @tailwind base;
@@ -35,10 +18,9 @@
 
 body {
   margin: 0px;
-  background-color: var(--background);
+  background-color: var(--color-background);
   font-family: "Roboto", sans-serif;
-  color: var(--white);
-  --navbar-height: 60px;
+  color: var(--color-white);
 }
 
 .navBarHeight {

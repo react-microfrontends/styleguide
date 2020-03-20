@@ -3,11 +3,13 @@ module.exports = {
     colors: {
       primary: "var(--color-primary)",
       secondary: "var(--color-secondary)",
-      success: "var(--color-success)",
       danger: "var(--color-danger)",
       warning: "var(--color-warning)",
       info: "var(--color-info)",
-      contrast: "var(--color-contrast)"
+      background: "var(--color-background)",
+      white: "var(--color-white)",
+      black: "var(--color-black)",
+      overlay: "var(--color-overlay)"
     }
   },
   variants: {},
