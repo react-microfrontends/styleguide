@@ -1,22 +1,26 @@
-body {
-  margin: 0px;
-  --primary: #011627;
-  --background: #182b3a;
-  --white: #fdfffc;
-  --black: #171817;
-  --gray: #8b8c8a;
-  --blue: #2ec4b6;
-  --red: #e71d36;
-  --orange: #ff9f1c;
-  --white-overlay: rgba(253, 255, 252, 0.8);
-  background-color: var(--background);
-  font-family: "Roboto", sans-serif;
-  color: var(--white);
-  --navbar-height: 60px;
+:root {
+  --color-primary: #011627;
+  --color-secondary: #8b8c8a;
+  --color-danger: #e71d36;
+  --color-warning: #ff9f1c;
+  --color-info: #2ec4b6;
+  --color-background: #182b3a;
+  --color-white: #fdfffc;
+  --color-black: #171817;
+  --color-overlay: rgba(253, 255, 252, 0.8);
 }
 
-.navBarHeight {
-  height: var(--navbar-height);
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  margin: 0px;
+  background-color: var(--color-background);
+  font-family: "Roboto", sans-serif;
+  color: var(--color-white);
 }
 
 nav.topnav {
@@ -26,33 +30,13 @@ nav.topnav {
   z-index: 100;
 }
 
-.m-t-navBarHeight {
-  margin-top: var(--navbar-height);
-}
-
-.brand-button {
-  background-color: var(--orange);
-  color: var(--white);
-  border-style: none;
-  text-align: center;
-  cursor: pointer;
-  padding: 8px;
-  text-size: 100%;
-}
-
-.brand-button:disabled {
-  background-color: var(--primary);
-  cursor: not-allowed;
-  color: var(--gray);
-}
-
 .brand-link {
   text-decoration: none;
-  color: var(--blue);
+  color: var(--color-blue);
 }
 
 .brand-link:visited {
-  color: var(--orange);
+  color: var(--color-orange);
 }
 
 .margin-bottom-16 {
