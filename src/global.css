@@ -23,10 +23,6 @@ body {
   color: var(--color-white);
 }
 
-.navBarHeight {
-  height: var(--navbar-height);
-}
-
 nav.topnav {
   position: fixed;
   width: 100vw;
@@ -34,33 +30,13 @@ nav.topnav {
   z-index: 100;
 }
 
-.m-t-navBarHeight {
-  margin-top: var(--navbar-height);
-}
-
-.brand-button {
-  background-color: var(--orange);
-  color: var(--white);
-  border-style: none;
-  text-align: center;
-  cursor: pointer;
-  padding: 8px;
-  text-size: 100%;
-}
-
-.brand-button:disabled {
-  background-color: var(--primary);
-  cursor: not-allowed;
-  color: var(--gray);
-}
-
 .brand-link {
   text-decoration: none;
-  color: var(--blue);
+  color: var(--color-blue);
 }
 
 .brand-link:visited {
-  color: var(--orange);
+  color: var(--color-orange);
 }
 
 .margin-bottom-16 {
