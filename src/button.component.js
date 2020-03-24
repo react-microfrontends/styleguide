@@ -5,7 +5,7 @@ export default function Button(props) {
     children,
     disabled = false,
     loading = false,
-    className,
+    className = '',
     ...remainingProps
   } = props;
   const background =
