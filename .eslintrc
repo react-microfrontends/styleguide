@@ -1,6 +1,4 @@
 {
-  "parserOptions": {
-    "ecmaVersion": 2018,
-  },
+  "parser": "babel-eslint",
   "extends": ["react-important-stuff", "plugin:prettier/recommended"]
 }
