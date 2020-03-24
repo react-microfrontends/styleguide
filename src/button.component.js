@@ -7,11 +7,12 @@ export default function Button(props) {
     loading = false,
     ...remainingProps
   } = props;
+  const background =
+    disabled || loading ? "opacity-50 bg-secondary" : "bg-warning";
   return (
     <button
-      className={`mb-8 font-bold py-2 px-4 rounded ${
-        disabled || loading ? `opacity-50 bg-secondary` : "bg-warning"
-      }`}
+      className={`mb-8 font-bold py-2 px-4 rounded ${background}`}
+      disabled={disabled || loading}
       {...remainingProps}
     >
       {loading ? "Loading" : children}
