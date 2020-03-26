@@ -17,9 +17,7 @@
 @tailwind utilities;
 
 body {
-  margin: 0px;
   background-color: var(--color-background);
-  font-family: "Roboto", sans-serif;
   color: var(--color-white);
 }
 
@@ -28,17 +26,4 @@ nav.topnav {
   width: 100vw;
   top: 0px;
   z-index: 100;
-}
-
-.brand-link {
-  text-decoration: none;
-  color: var(--color-blue);
-}
-
-.brand-link:visited {
-  color: var(--color-orange);
-}
-
-.margin-bottom-16 {
-  margin-bottom: 16px;
 }
