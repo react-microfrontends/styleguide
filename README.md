@@ -32,8 +32,8 @@ There are two ways to do local development. It is preferred to do one module at 
 
 ```sh
 cd styleguide
-yarn install
-yarn start --https --port 9001
+pnpm install
+pnpm start -- --https --port 9001
 ```
 
 Note that you may use whichever port you would like to. Go to https://localhost:9001/react-mf-styleguide.js and verify that you are able to load the file without any SSL problems. To solve SSL problems, see [these instructions](https://improveandrepeat.com/2016/09/allowing-self-signed-certificates-on-localhost-with-chrome-and-firefox/).
@@ -60,8 +60,8 @@ Run the root-config project locally:
 
 ```
 cd root-config
-yarn install
-yarn start
+pnpm install
+pnpm start
 ```
 
 Now follow the steps above for "One module at a time" for each of the modules you wish to work on.
@@ -69,4 +69,3 @@ Now follow the steps above for "One module at a time" for each of the modules yo
 ## Adapting for your organization
 
 Feel free to fork and modify any files you would like when doing a proof of concept for your organization. When it's time to actually create / adapt your organization's projects, consider using [create-single-spa](https://single-spa.js.org/docs/create-single-spa) instead of forking this repository.
-
