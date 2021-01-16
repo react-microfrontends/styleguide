@@ -1,31 +1,39 @@
-const webpackMerge = require("webpack-merge");
+const { mergeWithRules } = require("webpack-merge");
 const singleSpaDefaults = require("webpack-config-single-spa-react");
 
-module.exports = webpackConfigEnv => {
+module.exports = (webpackConfigEnv) => {
   const defaultConfig = singleSpaDefaults({
     orgName: "react-mf",
     projectName: "styleguide",
-    webpackConfigEnv
+    webpackConfigEnv,
   });
 
-  return webpackMerge.smart(defaultConfig, {
+  const config = mergeWithRules({
+    module: {
+      rules: {
+        test: "match",
+        use: "replace",
+      },
+    },
+  })(defaultConfig, {
+    // customize the webpack config here
     module: {
       rules: [
         {
           test: /\.css$/i,
           use: [
-            "style-loader",
-            "css-loader",
-            {
-              loader: "postcss-loader",
-              options: {
-                ident: "postcss",
-                plugins: [require("tailwindcss"), require("autoprefixer")]
-              }
-            }
-          ]
-        }
-      ]
-    }
+            require.resolve("style-loader", {
+              paths: [require.resolve("webpack-config-single-spa")],
+            }),
+            require.resolve("css-loader", {
+              paths: [require.resolve("webpack-config-single-spa")],
+            }),
+            "postcss-loader",
+          ],
+        },
+      ],
+    },
   });
+
+  return config;
 };
